@@ -54,21 +54,21 @@ CREATE OR REPLACE  FILE FORMAT ff_IPEDS_Parquet
 -- Create stage area to load Parquet file 
 CREATE OR REPLACE stage IPEDS_ADM FILE_FORMAT = ff_IPEDS_Parquet;
 
-put file://D:\snowflake_python_conn\load_sf_py\nexus\hd_csv\HD2017.csv @IPEDS_HD;
-put file://D:\snowflake_python_conn\load_sf_py\nexus\hd_csv\HD2018.csv @IPEDS_HD;
-put file://D:\snowflake_python_conn\load_sf_py\nexus\hd_csv\HD2019.csv @IPEDS_HD;
+put file:///HD2017.csv @IPEDS_HD; 
+put file:///HD2018.csv @IPEDS_HD;
+put file:///HD2019.csv @IPEDS_HD;
 
-put file://D:\snowflake_python_conn\load_sf_py\nexus\effy_json\effy2017_rv.json @IPEDS_EFFY;
-put file://D:\snowflake_python_conn\load_sf_py\nexus\effy_json\effy2018_rv.json @IPEDS_EFFY;
-put file://D:\snowflake_python_conn\load_sf_py\nexus\effy_json\effy2019_rv.json @IPEDS_EFFY;
+put file:///effy2017_rv.json @IPEDS_EFFY;
+put file:///effy2018_rv.json @IPEDS_EFFY;
+put file:///effy2019_rv.json @IPEDS_EFFY;
 
-put file://D:\snowflake_python_conn\load_sf_py\nexus\ORC\ic2017_ay_orc.orc @IPEDS_IC/2017/;
-put file://D:\snowflake_python_conn\load_sf_py\nexus\ORC\ic2018_ay_orc.orc @IPEDS_IC/2018/;
-put file://D:\snowflake_python_conn\load_sf_py\nexus\ORC\ic2019_ay_orc.orc @IPEDS_IC/2019/;
+put file:///ic2017_ay_orc.orc @IPEDS_IC/2017/;
+put file://ic2018_ay_orc.orc @IPEDS_IC/2018/;
+put file:///ic2019_ay_orc.orc @IPEDS_IC/2019/;
 
-put file://D:\snowflake_python_conn\load_sf_py\nexus\ADM_parquet\adm2017.parquet @IPEDS_ADM/2017/;
-put file://D:\snowflake_python_conn\load_sf_py\nexus\ADM_parquet\adm2018.parquet @IPEDS_ADM/2018/;
-put file://D:\snowflake_python_conn\load_sf_py\nexus\ADM_parquet\adm2019.parquet @IPEDS_ADM/2019/;
+put file://adm2017.parquet @IPEDS_ADM/2017/;
+put file:///adm2018.parquet @IPEDS_ADM/2018/;
+put file:///adm2019.parquet @IPEDS_ADM/2019/;
 
 DROP TABLE IF EXISTS od_AcademicInstitution;
 
