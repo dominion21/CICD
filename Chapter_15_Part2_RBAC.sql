@@ -1,6 +1,7 @@
 use role SYSADMIN;
 create warehouse if not exists BAKERY_WH with warehouse_size = 'XSMALL';
 create database if not exists BAKERY_DB;
+create schema if not exists BAKERY_DB.ORCHESTRATION;
 use database BAKERY_DB;
 
 -- create schema with managed access using the SYSADMIN role
