@@ -70,7 +70,7 @@ grant usage on warehouse BAKERY_WH to role DATA_ENGINEER;
 grant usage on warehouse BAKERY_WH to role DATA_ANALYST;
 
 -- grant privileges that allow the DATA_ENGINEER role to use the GIT integration
-use role SYSADMIN;
+use role SECURITYADMIN;
 grant usage on database ADMIN_DB to role DATA_ENGINEER;
 grant usage on schema ADMIN_DB.GIT_INTEGRATION to role DATA_ENGINEER;
 grant read on git repository ADMIN_DB.GIT_INTEGRATION.SF_DE to role DATA_ENGINEER;
