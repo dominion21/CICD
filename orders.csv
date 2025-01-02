@@ -1,0 +1,10 @@
+Customer , Order date ,Delivery date, Baked good type, Quantity
+Coffee Pocket,7/7/2023,7/10/2023,Baguette,6
+Coffee Pocket ,7/7/2023,7/10/2023, Bagel ,12
+Coffee Pocket ,7/7/2023, 2023-07-10, English muffin ,16
+Coffee Pocket ,7/7/2023, 2023-07-10 ,Croissant ,18
+Lily's Coffee, 2023-07-07 ,7/10/2023,Bagel ,20
+Lily's Coffee, 2023-07-07, 2023-07-10 ,White loaf ,4
+Lily's Coffee ,7/7/2023, 2023-07-10 ,Croissant ,20
+Crave Coffee ,7/7/2023,7/10/2023,Croissant ,50
+Best Burgers, 2023-07-07, 2023-07-10, Hamburger bun ,75
